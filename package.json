@@ -1,0 +1,24 @@
+{
+  "name": "atlas-data-checker",
+  "version": "1.0.0",
+  "description": "Script to check MongoDB Atlas database without modifying data",
+  "main": "check-atlas-data.js",
+  "scripts": {
+    "check": "node check-atlas-data.js"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.1",
+    "mongodb": "^6.20.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.4",
+    "web-vitals": "^5.1.0"
+  },
+  "keywords": [
+    "mongodb",
+    "atlas",
+    "database",
+    "checker"
+  ],
+  "author": "BookSphere Team",
+  "license": "MIT"
+}

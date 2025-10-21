@@ -1,0 +1,207 @@
+.group-details {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.group-header {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.group-header h1 {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+}
+
+.group-info {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.info-item {
+  background-color: #ecf0f1;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.members-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.member-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.member-card h3 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.role {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.role.admin {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.role.member {
+  background-color: #3498db;
+  color: white;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 1rem;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.expiry {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.discussion-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.discussions-list {
+  margin-top: 2rem;
+}
+
+.discussion-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.discussion-item h4 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.discussion-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #18bc9c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15a589;
+}
+
+.btn-secondary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #2980b9;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5rem;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .group-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .members-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
